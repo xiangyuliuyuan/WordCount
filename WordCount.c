@@ -55,7 +55,7 @@ int count_words(char *filename) {
 int count_chars(char *filename) {
     FILE *fp;
     char line[LINE_LEN];
-    int count = 0;
+    int count =0;
 
     fp = fopen(filename, "r");
     if (fp == NULL) {
