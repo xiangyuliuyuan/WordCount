@@ -1,0 +1,815 @@
+<!--
+     div{
+            background-image:url(照片/QQ图片20230506152817.png);
+            background-repeat: no-repeat;
+        }
+        <embed src="D:\play\练习\QQ录屏20230506211441.mp4" type="" wmode="transparent">
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*注册css*/
+        /*
+        .div9{
+            display: none ;
+            width: 1510px;
+            height: 640px;
+            background-size: 1510px 740px;
+            background-image: url(20210202013505760.jpg);
+            background-repeat: no-repeat;
+            padding-top: 100px;
+        }
+        */
+        .div11{
+            margin-top: 100px;
+            margin-left: 300px;
+            position: absolute;
+            display: none ;
+            width: 1200px;
+            height: 500px;
+            
+            border-radius: 30px;
+            box-shadow:  0 0 5px 2px rgb(0, 179, 255);
+        }
+        .div22{
+            margin-left: 160px;
+            margin-top: 40px;
+        }
+        .img11{
+            width: 600px;
+            height: 300px;
+            border-radius: 20px;
+        }
+        .img22{
+            margin-top: 20px;
+            width: 160px;
+            height: 150px;
+            margin-left: 120px;
+
+        }
+
+        .div9 span{
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .div22 span{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 楷体;
+        }
+        
+        .div33{
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 400px;
+            height: 250px;
+            border-radius: 30px;
+        }
+        .div44{
+            background-image: url(V-115185-47E0EA67.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 500px;
+            background-color: beige;
+            float: left;
+            border-radius: 30px 0px 0px 30px;
+        }
+        .div55{
+            width: 400px;
+            height: 500px;
+            background-color: white;
+            border-radius: 0px 30px 30px 0px;
+            float: left;
+        }
+        .div66{
+            width: 385px;
+            margin-left: 20px;
+        }
+        .span11{
+            margin-left: 170px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 楷体;
+        }
+        #span11,#span22{
+            font-weight: 1000;
+            margin-left: 18px;
+        }
+        #span44{
+            font-weight: 1000;
+            margin-left: 20px;
+        }
+        #span33{
+            font-weight:bold ;
+            margin-left: -12px;
+        }
+        .input1{
+            border: 1px solid black;
+            height: 30px;
+            width: 200px;
+            margin-top: 1px;
+            border-radius: 5px;
+        }
+
+        .button11{
+            margin-top: 0px;
+            width: 204px;
+            height: 40px;
+            margin-left: 70px;
+            background-color: white;
+        }
+        .button11:hover{
+            background-color: rgba(222, 220, 220, 0.643);
+            color: black;
+        }
+        #error00 , #error11 ,#error33{
+            margin-right: 5px;
+            margin-top: 10px;
+            float: right;
+            width: 105px;
+            height: 20px;
+            color: red;
+            font-size: 8px;
+            font-weight: 800;
+        }
+        #error22{
+            margin-right: 16px;
+            margin-top: 10px;
+            float: right;
+            width: 90px;
+            height: 20px;
+            color: red;
+            font-size: 8px;
+            font-weight: 800;
+        }
+        /*登录css*/
+        body{
+            background-image: url(365eec7af9c8817.jpg);
+            background-size: 100% 100%;
+            width: 1500px;
+            height: 740px;
+            background-repeat: no-repeat;
+        }
+        .one{
+            position: relative;
+            width: 1500px;
+            height: 740px;
+        }
+       
+
+        
+        .div0{
+            margin-top: 20px;
+            width: 240px;
+            margin-left: 200px;
+        }
+        .div1{
+            color: red;
+            margin-top: 10px;
+            float: left;
+            margin-left: 220px;
+            width: 600px;
+            height: 400px;
+           
+        }
+        .div2{
+            margin-top: 20px;
+            width:500px;
+            height: 280px;
+            float: right;
+        }
+        .div21{
+            display: none;
+
+            width:500px;
+            height: 280px;
+            float: right;
+        }
+        .div21 form{
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        .div21 #span2{
+            margin-left: 65px;
+        }
+        .div3{
+            float: left;
+            background-color: green;
+            
+            height: 400px;
+            border: 1px solid green ;
+        }
+        .div4{
+            
+            margin-left: 80px;
+            margin-top: 10px;
+            font-family: 楷体;
+            font-weight: 500;
+        }
+        .div4 span{
+            margin-left: 70px;
+            color: black;
+            font-weight: bold;
+        }
+        .div4 span:hover{
+            color: red;
+            cursor: default;
+        }
+        .spann,.spann1:hover{
+            cursor: default;
+        }
+        .spann{
+            margin-left: 40px;
+            margin-top: 30px;
+            color: red;
+            border-bottom: 1px solid red;
+        }
+        #span20{
+            margin-left: 10px;
+            font-family: 楷体;
+            font-weight: bold;
+        }
+        #mima1{
+            width: 150px;
+        }
+        input{
+            height: 40px;
+            width: 250px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .button1:hover{
+            background-color: gray;
+        }
+        .button1{
+            width: 260px;
+            margin-left: 75px;
+        }
+        .button{
+            width: 260px;
+            margin-left: 130px;
+        }
+        .button:hover{
+            background-color: gray;
+
+        }
+        .span1{
+            color: rgb(241, 62, 62);
+            font-weight: bold;
+            font-family: 楷体;
+        }
+        .span4{
+            margin-top: 25px;
+            margin-left: 35px;
+            width: 400px;
+            height: 50px;
+
+        }
+        .div77{
+            width: 390px;
+            height: 160px;
+        }
+        .div77 span{
+            font-weight: bold;
+            margin-top: 2px;
+            float: right;
+        }
+        .div77 span:hover{
+            color: grey;
+        }
+        #span2{
+            margin-left: 30px;
+        }
+        .span4 span{
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+            
+            font-weight: bold;
+
+            font-family: 楷体;
+            font-size: 20px;
+            
+        }
+        .div2 .span1{
+            margin-top: 10px;
+            margin-left: 100px;
+            font-size: 50px;
+            
+        }
+        .div0 .span1{
+            font-size: 70px;
+        }
+        .span2{
+            font-family: 楷体;
+            font-size: 40px;
+            color:rgba(40, 5, 5, 0.677) ;
+            margin-left: 210px;
+        }
+        .span3{
+            color:rgba(40, 5, 5, 0.677) ;
+
+            font-size: 40px;
+            font-family: 楷体;
+        }
+        #error , #error1 ,#error2,#error3{
+            margin-top: 25px;
+            margin-right: 5px;
+            float: right;
+            width: 105px;
+            height: 20px;
+            color: red;
+            font-size: 8px;
+            font-weight: 800;
+    
+        }
+
+        .picture{
+            width: 120px;
+            height: 120px;
+            float: right;
+            margin-top: 20px;
+            margin-right: 260px;
+        }
+        #span1{
+            margin-left: 80px;
+            font-family: 楷体;
+            font-weight: 1000;
+        }
+        #span2{
+            margin-left: 80px;
+
+            font-family: 楷体;
+            font-weight: 1000;
+        }
+        #span10{
+            margin-left: 10px;
+            font-family: 楷体;
+            font-weight: 1000;
+        }
+        .two{
+            font-family: 楷体;
+            font-size: 20px;
+
+        }
+        .section1{
+            width: 800px;
+            height: 260px;
+            margin-left: 750px;
+            float: right;
+        }
+        .div21 #mima{
+            height: 40px;
+            width: 250px;
+            margin-top: 10px;
+            border-radius: 5px 0px 0px 5px;
+            border: solid none solid solid;
+        }
+        .yzm{
+            border: solid solid solid none;
+            border-radius: 0px 5px 5px 0px;
+            width: 100px;
+            height:45px;
+        }
+        .yzm:hover{
+            background-color: grey;
+        }
+        .section2{
+            width: 500px;
+            height: 400px;
+            float: right;
+            border-radius: 20px;
+            margin-right: 100px;
+            background-color:rgba(254, 250, 250, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!--登录界面html-->
+    <div class="one">
+        <div class="section1">
+            <img src="D:\play\练习\QQ图片20230506212528.png" alt="" class="picture"><br>
+            <div class="div0">
+                <span class="span1">农广推</span>
+            </div><br>
+            <div>
+                <span class="span2">积极响应政策·</span>
+                <span class="span3">认真做好服务</span>
+            </div>
+            
+            
+            <div class="div1">
+            <span class="two">城乡结合 |</span>
+            <span class="two">随订随送 |</span>
+            <span class="two">新鲜果蔬 |</span>
+            <span class="two">送货上门 |</span>
+            <span class="two">童叟无欺</span>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="span4">
+                <span class="spann">&nbsp;&nbsp;账号密码登录&nbsp;&nbsp;</span>
+                |
+                <span class="spann1">&nbsp;&nbsp;手机验证码登录&nbsp;&nbsp;</span>
+            </div>
+            
+           
+                <div class="div2">
+                    <form action="" method="post">
+                        <lebal id = span1>账号：</lebal><input type="text" id = zhanghao><div id = error></div><br><br>
+                        <lebal id = span2>密码：</lebal><input type="password" id = mima><div id = error1></div><br><br>
+                        <input type="button" value="登录" class="button"><br>
+                    </form>
+                    <div class="div4">
+                        <span class="s1">忘记密码</span>
+                        <span class="s2">注册账号</span>
+                    </div>
+                    
+                </div>
+    
+                <div class="div21">
+                    <form action="" method="post">
+                        <lebal id = span10>手机号：</lebal><input type="text" id = zhanghao1><div id = error2></div><br><br>
+                        <lebal id = span20>验证码：</lebal><input type="password" id = mima1 placeholder="请输入验证码">
+                        <input type="button" class="yzm" value="获取验证码" id="yzm"></inpute><div id = error3></div><br><br>
+                        <input type="button" value="登录" class="button1"><br>
+                    </form>
+                </div>
+        </div>
+       
+    </div>
+    <!--注册界面html-->
+    <div class="div11">
+        <div class="div44">
+            <div class="div22">
+                <span>账号密码注册</span>
+            </div>
+            <div class="div33"><img src="D:\play\练习\照片\V-115185-47E0EA66.jpg" alt="" class="img11"></div>
+        </div>
+
+        <div class="div55">
+            <div class="div77">
+                <img src="D:\play\练习\QQ图片20230506212528.png" alt="" class="img22">
+                <span>ㄨ</span>
+            </div>
+            
+            <br>
+            <div class="span11">注册</div><br>
+            <div class="div66">
+                <span id = span11>账号：</span><input type="text" id = zhanghao2 class="input1" onblur="zhanghao()"><div id = error00></div><br><br>
+                <span id = span22>密码：</span><input type="password" id = mima2 class="input1" onblur="mima()"><div id = error11></div><br><br>
+                <span id = span33>确认密码：</span><input type="qrpassword" id = qr class="input1" onblur="qr()"><div id = error22></div><br><br>
+                <span id = span44>手机：</span><input type="phone" id = phone class="input1" onblur="phone()"><div id = error33></div><br><br>
+                <input type="button" value="注册" class="button11">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(".div77 span").click(function(){
+            $(".div11").css("display","none");
+            $(".one").css("display","block");
+        })
+        //登录界面js
+        //获取验证码
+        $("#yzm").click(function(){
+            //验证码倒计时
+            var time = $(this);
+            //设计倒计时
+            var time1 = 60;
+            var timestop = setInterval(function(){
+                $(this).prop("disabled",true);
+                time1-=1;
+                $("#yzm").val(time1+"s");
+                if(time1==0){
+                    clearInterval(timestop);
+                    $("#yzm").val("发送验证码");
+                    $(this).prop("disabled",false);
+                }
+            },1000)
+        })
+        //选择账号密码登录
+        $(".spann").click(function(){
+
+            //报错信息与账号密码删除
+            $("#zhanghao1").val("")
+            $("#mima1").val("")
+            document.getElementById("error2").innerText="";
+            document.getElementById("error3").innerText="";
+            //账号密码登录变红,手机验证变黑
+            $(".spann1").css("color","black");
+            $(".spann1").css("border-bottom","1px solid black");
+            $(".spann").css("color","red");
+            $(".spann").css("border-bottom","1px solid red");
+            //切换到账号密码登录界面
+            $(".div2").css("display","block")
+            $(".div21").css("display","none")
+           
+        })
+        //选择手机验证码登录
+        $(".spann1").click(function(){
+            //报错信息与账号密码删除
+            $("#zhanghao").val("")
+            $("#mima").val("")
+            document.getElementById("error1").innerText="";
+            document.getElementById("error").innerText="";
+
+            //账号密码登录变黑,手机验证变红
+            $(".spann1").css("color","red");
+            $(".spann1").css("border-bottom","1px solid red");
+            $(".spann").css("color","black");
+            $(".spann").css("border-bottom","1px solid black");
+            //切换到手机验证码登录界面
+            $(".div2").css("display","none")
+            $(".div21").css("display","block")
+        })
+
+        //手机验证码报错
+        $(".button1").click(function(){
+            var obj = document.getElementById("error2");
+            var obj1 = document.getElementById("error3");
+            obj.innerHTML = "";
+            obj1.innerHTML = "";
+            var yonghuname = $("#zhanghao1").val();
+            var mima1 = $("#mima1").val();
+            var length = yonghuname.length;
+            var length1 = mima1.length;
+            if(length == 0){
+                $("#error2").append("手机号不能为空！")
+
+            }
+            else if(length != 11){
+                $("#error2").append("手机号格式错误！")
+            
+            }else{
+                $("#error2").append("✔")
+            }
+            if(length1 == 0){
+                $("#error3").append("验证码不能为空！")
+            }
+        })
+
+        $(".button").click(function(){
+            var obj = document.getElementById("error");
+            var obj1 = document.getElementById("error1");
+            //删除div报错内容
+            obj.innerHTML = "";
+            obj1.innerHTML = "";
+            var yonghuname = $("#zhanghao").val();
+            var mima = $("#mima").val();
+            console.log(yonghuname);
+            
+            //console.log(yonghuname.length)
+
+            //获取账号长度
+            var length = yonghuname.length;
+            //获取密码长度
+            var length1 = mima.length;
+            //判断输入的长度是否超过规定的长度
+            if(length == 0){
+                $("#error").append("账号不能为空！")
+
+            }
+            else if(length != 12){
+                $("#error").append("账号必须为12位！")
+            
+            }else{
+                $("#error").append("✔")
+            }
+            if(length1 == 0){
+                $("#error1").append("密码不能为空！")
+            }else if(length1<6 && length1>0){
+                $("#error1").append("密码至少为6位数！")
+            }else{
+                $("#error1").append("账号或密码错误！")
+            }
+            if(length == 12 && length1 == 6){
+                $(location).attr("href","主界面.html")
+            }
+        })
+        $(".div4 .s1").click(function(){
+            $(location).attr("href","忘记密码.html")
+        })
+        /*
+        $(".div4 .s2").click(function(){
+            $(location).attr("href","注册界面.html")
+        })
+        
+        */
+        $(".div4 .s2").click(function(){
+            $(".div11").css("display","block");
+            $(".one").css("display","none");
+
+        })
+
+        //注册界面js
+        //通过id获取内容
+        var obj = document.getElementById("error00");
+        var obj1 = document.getElementById("error11");
+        var obj2 = document.getElementById("error22");
+        var obj3 = document.getElementById("error33");
+        //输入账号验证
+        function zhanghao(){
+            obj.innerHTML = "";
+            var yonghuname = $("#zhanghao2").val();
+            var length = yonghuname.length;
+            if(length == 0){
+                $("#error00").append("账号不能为空！")
+
+            }
+            else if(length != 12){
+                $("#error00").append("账号必须为12位！")
+            
+            }else{
+                $("#error00").append("✔")
+            }
+        }
+        //输入密码验证
+        function mima(){
+            obj1.innerHTML = "";
+            var mima = $("#mima2").val();
+            var length1 = mima.length;
+            if(length1 == 0){
+                $("#error11").append("密码不能为空！")
+            }else if(length1<6 && length1>0){
+                $("#error11").append("密码至少为6位数！")
+            }else{
+                $("#error11").append(" ✔")
+            }
+        }
+        //再次输入密码确认
+        function qr(){
+            var mima = $("#mima2").val();
+            var length1 = mima.length;
+            obj2.innerHTML = "";
+            var qr = $("#qr").val();
+            if(length1 >=6){
+                if(qr != mima){
+                    $("#error22").append("密码不一致！")
+                }else{
+                    $("#error22").append("✔")
+                }
+            }
+        }
+        //输入电话号码确认
+        function phone(){
+            obj3.innerHTML = "";
+            var phone = $("#phone").val();
+            var length2 = phone.length;
+            if(length2 == 0){
+                $("#error33").append("手机号不能为空！")
+
+            }else if(length2 !=11){
+                $("#error33").append("手机号格式错误！")
+
+            }else{
+                $("#error33").append("✔")
+
+            }
+        }
+        //注册验证，成功跳转登录界面
+        $(".button11").click(function(){
+            var yonghuname = $("#zhanghao2").val();
+            var mima = $("#mima2").val();
+            var qr = $("#qr").val();
+            var phone = $("#phone").val();
+            if(obj.innerText!="✔"){
+                obj.innerHTML = "";
+
+                if(yonghuname.length==0){
+                    $("#error00").append("账号不能为空！")
+                }else{
+                    $("#error00").append("账号必须为12位！")
+                }
+            }else if(obj1.innerText!="✔"){
+                obj1.innerHTML = "";
+
+                if(mima.length==0){
+                    $("#error11").append("密码不能为空！")
+
+                }else{
+                    $("#error11").append("密码至少为6位数！")
+
+                }
+            }else if(obj2.innerText!="✔"){
+                obj2.innerHTML = "";
+                if(qr.length==0){
+                    $("#error22").append("请确认密码！")
+                    
+                }else{
+                    $("#error22").append("密码不一致！")
+
+                }
+            }else if(obj3.innerText!="✔"){
+                obj3.innerHTML = "";
+
+                if(phone.length==0){
+                    $("#error33").append("手机号不能为空！")
+
+                }else{
+                    $("#error33").append("手机号格式错误！")
+                }
+            }else{
+                alert("注册成功！");
+                alert("欢迎加入农广推大家庭");
+
+                $(".div11").css("display","none");
+                $(".one").css("display","block");
+                $("#zhanghao").val(yonghuname)
+                $("#zhanghao1").val(yonghuname)
+                $("#zhanghao2").val("")
+                $("#mima2").val("")
+                $("#qr").val("")
+                $("#phone").val("")
+            }
+               
+        })
+        /*
+        
+        $(".button11").click(function(){
+
+            var obj = document.getElementById("error00");
+            var obj1 = document.getElementById("error11");
+            var obj2 = document.getElementById("error22");
+            var obj3 = document.getElementById("error33");
+            //删除div报错内容
+            obj.innerHTML = "";
+            obj1.innerHTML = "";
+            obj2.innerHTML = "";
+            obj3.innerHTML = "";
+            var yonghuname1 = $("#zhanghao2").val();
+            var mima1 = $("#mima2").val();
+            var qr1 = $("#qr1").val();
+            var phone1 = $("#phone1").val();
+
+            //console.log(yonghuname1);
+            
+            //console.log(yonghuname.length)
+
+            //获取账号长度
+            var length = yonghuname1.length;
+            //获取密码长度
+            var length1 = mima1.length;
+            var length2 = phone1.length;
+            //判断输入的长度是否超过规定的长度
+            if(length == 0){
+                $("#error00").append("账号不能为空！")
+
+            }
+            else if(length != 12){
+                $("#error00").append("账号必须为12位！")
+            
+            }else{
+                $("#error00").append("✔")
+            }
+            //密码检验
+            if(length1 == 0){
+                $("#error11").append("密码不能为空！")
+            }else if(length1<6 && length1>0){
+                $("#error11").append("密码至少为6位数！")
+            }else{
+                $("#error11").append("✔")
+            }
+            //密码确认
+            //console.log(mima1);
+            if(length1 >=6){
+                if(qr1 != mima1){
+                    $("#error22").append("密码不一致！")
+                }else{
+                    $("#error22").append("✔")
+                }
+            }
+            if(length2 == 0){
+                $("#error33").append("手机号不能为空！")
+
+            }else if(length2 !=11){
+                $("#error33").append("手机号格式错误！")
+
+            }else{
+                $("#error33").append("✔")
+
+            }
+            if(obj.innerText=="✔" && obj1.innerText=="✔" && obj2.innerText=="✔" && obj3.innerText=="✔"){
+                alert("注册成功！");
+                alert("欢迎加入农广推大家庭");
+                $(".div11").css("display","none");
+                $(".one").css("display","block");
+                $("#zhanghao").val(yonghuname1)
+                $("#zhanghao1").val(yonghuname1)
+                $("#zhanghao2").val("")
+                $("#mima2").val("")
+                $("#qr1").val("")
+                $("#phone1").val("")
+
+            }
+        })
+        */
+    </script>
+</body>
+</html>

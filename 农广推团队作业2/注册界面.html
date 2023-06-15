@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div9{
+            width: 1510px;
+            height: 640px;
+            background-size: 1510px 740px;
+            background-image: url(20210202013505760.jpg);
+            background-repeat: no-repeat;
+            padding-top: 100px;
+        }
+        .div11{
+            width: 1200px;
+            height: 500px;
+            margin: auto;
+            border-radius: 30px;
+            box-shadow:  0 0 5px 2px rgb(0, 179, 255);
+        }
+        .div22{
+            margin-left: 160px;
+            margin-top: 40px;
+        }
+        .img11{
+            width: 600px;
+            height: 300px;
+            border-radius: 20px;
+        }
+        .img22{
+            margin-top: 20px;
+            width: 160px;
+            height: 150px;
+            margin-left: 120px;
+
+        }
+
+        .div9 span{
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .div22 span{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 楷体;
+        }
+        
+        .div33{
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 400px;
+            height: 250px;
+            border-radius: 30px;
+        }
+        .div44{
+            background-image: url(V-115185-47E0EA67.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 500px;
+            background-color: beige;
+            float: left;
+            border-radius: 30px 0px 0px 30px;
+        }
+        .div55{
+            width: 400px;
+            height: 500px;
+            background-color: white;
+            border-radius: 0px 30px 30px 0px;
+            float: left;
+        }
+        .div66{
+            width: 385px;
+            margin-left: 20px;
+        }
+        .span11{
+            margin-left: 170px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 楷体;
+        }
+        #span11,#span22,#span44{
+            font-weight: 1000;
+        }
+        #span33{
+            font-weight:bold ;
+            margin-left: -10px;
+        }
+        input{
+            border: 1px solid black;
+            height: 30px;
+            width: 200px;
+            margin-top: 1px;
+            border-radius: 5px;
+        }
+        .button11{
+            width: 204px;
+            height: 40px;
+            margin-left: 70px;
+            background-color: white;
+        }
+        .button11:hover{
+            background-color: rgba(222, 220, 220, 0.643);
+            color: black;
+        }
+        #error00 , #error11 ,#error33{
+            margin-right: 5px;
+            margin-top: 10px;
+            float: right;
+            width: 105px;
+            height: 20px;
+            color: red;
+            font-size: 8px;
+            font-weight: 800;
+        }
+        #error22{
+            margin-right: 16px;
+            margin-top: 10px;
+            float: right;
+            width: 90px;
+            height: 20px;
+            color: red;
+            font-size: 8px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="div9">
+        <div class="div11">
+            <div class="div44">
+                <div class="div22">
+                    <span>账号密码注册</span>
+                </div>
+                <div class="div33"><img src="D:\play\练习\照片\V-115185-47E0EA66.jpg" alt="" class="img11"></div>
+            </div>
+
+            <div class="div55">
+                <img src="D:\play\练习\QQ图片20230506212528.png" alt="" class="img22"><br>
+                <div class="span11">注册</div><br>
+                <div class="div66">
+                    <span id = span11>账号：</span><input type="text" id = zhanghao class="input1" onblur="zhanghao()"><div id = error00></div><br><br>
+                    <span id = span22>密码：</span><input type="password" id = mima class="input1" onblur="mima()"><div id = error11></div><br><br>
+                    <span id = span33>确认密码：</span><input type="qrpassword" id = qr class="input1" onblur="qr()"><div id = error22></div><br><br>
+                    <span id = span44>手机：</span><input type="phone" id = phone class="input1" onblur="phone()"><div id = error33></div><br><br>
+                    <input type="button" value="注册" class="button11">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        //通过id获取内容
+        var obj = document.getElementById("error00");
+        var obj1 = document.getElementById("error11");
+        var obj2 = document.getElementById("error22");
+        var obj3 = document.getElementById("error33");
+        //输入账号验证
+        function zhanghao(){
+            obj.innerHTML = "";
+            var yonghuname = $("#zhanghao").val();
+            var length = yonghuname.length;
+            if(length == 0){
+                $("#error00").append("账号不能为空！")
+
+            }
+            else if(length != 12){
+                $("#error00").append("账号必须为12位！")
+            
+            }else{
+                $("#error00").append("✔")
+            }
+        }
+        //输入密码验证
+        function mima(){
+            obj1.innerHTML = "";
+            var mima = $("#mima").val();
+            var length1 = mima.length;
+            if(length1 == 0){
+                $("#error11").append("密码不能为空！")
+            }else if(length1<6 && length1>0){
+                $("#error11").append("密码至少为6位数！")
+            }else{
+                $("#error11").append(" ✔")
+            }
+        }
+        //再次输入密码确认
+        function qr(){
+            var mima = $("#mima").val();
+            var length1 = mima.length;
+            obj2.innerHTML = "";
+            var qr = $("#qr").val();
+            if(length1 >=6){
+                if(qr != mima){
+                    $("#error22").append("密码不一致！")
+                }else{
+                    $("#error22").append("✔")
+                }
+            }
+        }
+        //输入电话号码确认
+        function phone(){
+            obj3.innerHTML = "";
+            var phone = $("#phone").val();
+            var length2 = phone.length;
+            if(length2 == 0){
+                $("#error33").append("手机号不能为空！")
+
+            }else if(length2 !=11){
+                $("#error33").append("手机号格式错误！")
+
+            }else{
+                $("#error33").append("✔")
+
+            }
+        }
+        //注册验证，成功跳转登录界面
+        $(".button11").click(function(){
+            var yonghuname = $("#zhanghao").val();
+            var mima = $("#mima").val();
+            var qr = $("#qr").val();
+            var phone = $("#phone").val();
+            if(obj.innerText!="✔"){
+                obj.innerHTML = "";
+
+                if(yonghuname.length==0){
+                    $("#error00").append("账号不能为空！")
+                }else{
+                    $("#error00").append("账号必须为12位！")
+                }
+            }else if(obj1.innerText!="✔"){
+                obj1.innerHTML = "";
+
+                if(mima.length==0){
+                    $("#error11").append("密码不能为空！")
+
+                }else{
+                    $("#error11").append("密码至少为6位数！")
+
+                }
+            }else if(obj2.innerText!="✔"){
+                obj2.innerHTML = "";
+                if(qr.length==0){
+                    $("#error22").append("请确认密码！")
+                    
+                }else{
+                    $("#error22").append("密码不一致！")
+
+                }
+            }else if(obj3.innerText!="✔"){
+                obj3.innerHTML = "";
+
+                if(phone.length==0){
+                    $("#error33").append("手机号不能为空！")
+
+                }else{
+                    $("#error33").append("手机号格式错误！")
+                }
+            }else{
+                alert("注册成功！");
+                alert("欢迎加入农广推大家庭");
+
+                $("#zhanghao").val("")
+                $("#mima").val("")
+                $("#qr").val("")
+                $("#phone").val("")
+                
+                $(location).attr("href","现代软件工程团队作业.html")
+            }
+               
+        })
+    </script>
+</body>
+</html>
